@@ -1,0 +1,26 @@
+train: ../data/ball/train/images
+val: ../data/ball/valid/images
+test: ../data/ball/test/images
+
+nc: 1
+names: ['ball']
+
+training_params:
+  weights: yolo12s.pt
+  epochs: 100
+  batch_size: 16
+  img_size: 640
+  device: auto
+  workers: 8
+  patience: 20
+  seed: 42
+  optimizer: adam
+  run_test: true
+
+
+roboflow:
+  workspace: primaryws
+  project: volleyball_ball_object_detection_dataset
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/primaryws/volleyball_ball_object_detection_dataset/dataset/1

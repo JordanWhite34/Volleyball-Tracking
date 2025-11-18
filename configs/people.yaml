@@ -1,6 +1,6 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+train: ../data/people/train/images
+val: ../data/people/valid/images
+test: ../data/people/test/images
 
 nc: 3
 names: ['referee', 'team_one', 'team_two']
