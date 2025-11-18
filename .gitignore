@@ -1,3 +1,4 @@
 runs/
 yolo12s.pt
 *.cache
+yolo11n.pt
