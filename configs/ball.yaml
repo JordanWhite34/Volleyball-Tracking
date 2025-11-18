@@ -7,15 +7,20 @@ names: ['ball']
 
 training_params:
   weights: yolo12s.pt
+  project: runs/ball
+  name: yolo12s-ball
   epochs: 100
-  batch_size: 16
-  img_size: 640
-  device: auto
+  batch: 16
+  imgsz: 640
+  device: 0
   workers: 8
   patience: 20
   seed: 42
   optimizer: adam
+  lr0: 0.001
   run_test: true
+  resume: false
+  exist_ok: false
 
 
 roboflow:
