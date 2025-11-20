@@ -2,5 +2,9 @@
   "ball": {
     "score": 0.6457437653358643,
     "run": "yolo12s-ball5"
+  },
+  "people": {
+    "score": 0.851860654211059,
+    "run": "yolo12s-ball6"
   }
 }

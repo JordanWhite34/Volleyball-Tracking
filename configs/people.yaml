@@ -5,6 +5,22 @@ test: ../data/people/test/images
 nc: 3
 names: ['referee', 'team_one', 'team_two']
 
+training_params:
+  weights: yolo12s.pt
+  project: runs/people
+  name: yolo12s-people
+  epochs: 100
+  batch: 16
+  imgsz: 640
+  device: 0
+  workers: 8
+  patience: 20
+  seed: 42
+  optimizer: adam
+  lr0: 0.001
+  resume: false
+  exist_ok: false
+
 roboflow:
   workspace: primaryws
   project: volleyball_players_detection

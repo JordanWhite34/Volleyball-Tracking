@@ -60,8 +60,8 @@ def train_ball():
         imgsz=params["imgsz"],
         project=params["project"],
         name=params["name"] + "-test",
-        device=params.get("device", "auto"),
-        workers=params.get("workers", 8),
+        device=params["device"],
+        workers=params["workers"],
         save_json=True,
     )
     print("test metrics stored under project/name-test")
